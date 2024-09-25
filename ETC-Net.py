@@ -592,9 +592,6 @@ class PatchEmbed(nn.Module):
 
 
 class Depth_Wise_Conv(nn.Module):
-    """
-        深度可分离卷积 = 分组卷积 + 逐点卷积调整通道
-    """
 
     def __init__(self, in_channel, out_channel):
         super(Depth_Wise_Conv, self).__init__()
